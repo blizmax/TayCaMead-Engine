@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\MISC">
+      <UniqueIdentifier>{985eb1ae-7172-47ef-a0f6-f2854e03f3d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MISC">
+      <UniqueIdentifier>{ab03a295-d94a-4d6b-8968-6168c1060c72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Physic Engine">
+      <UniqueIdentifier>{0c40e9d4-f3fd-438c-ba04-49d509d85903}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Bullet API">
+      <UniqueIdentifier>{a7e8294b-dd16-4595-8acf-fef821fc652b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Physic Engine">
+      <UniqueIdentifier>{9728fdef-6e67-4c54-8ac9-238083506cc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Bullet API">
+      <UniqueIdentifier>{f001eb11-06e0-47cc-87d2-4e5e9d16e5b1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files\MISC</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files\MISC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMPhysicEngine\PhysicEngineDLL.h">
+      <Filter>Header Files\MISC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMPhysicEngine\PhysicEngine\PhysicEngine.h">
+      <Filter>Header Files\Physic Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMPhysicEngine\PhysicEngine\RigidBody.h">
+      <Filter>Header Files\Physic Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMPhysicEngine\PhysicEngine\RigidBodyData.h">
+      <Filter>Header Files\Physic Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMPhysicEngine\PhysicEngine\AxisLiberties.h">
+      <Filter>Header Files\Physic Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMPhysicEngine\PhysicEngine\CollisionShape.h">
+      <Filter>Header Files\Physic Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMPhysicEngine\PhysicEngine\CollisionShapeData.h">
+      <Filter>Header Files\Physic Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMPhysicEngine\PhysicEngine\CollisionShapeType.h">
+      <Filter>Header Files\Physic Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMPhysicEngine\PhysicEngine\CollisionData.h">
+      <Filter>Header Files\Physic Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMPhysicEngine\PhysicEngineBulletAPI\BulletCollisionShape.h">
+      <Filter>Header Files\Bullet API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMPhysicEngine\PhysicEngineBulletAPI\BulletRigidBody.h">
+      <Filter>Header Files\Bullet API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMPhysicEngine\PhysicUtils.h">
+      <Filter>Header Files\MISC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMPhysicEngine\PhysicEngineBulletAPI\BulletPhysicEngine.h">
+      <Filter>Header Files\Bullet API</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files\MISC</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files\MISC</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicEngine\PhysicEngine.cpp">
+      <Filter>Source Files\Physic Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicEngine\CollisionShape.cpp">
+      <Filter>Source Files\Physic Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicEngine\RigidBody.cpp">
+      <Filter>Source Files\Physic Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicEngineBulletAPI\BulletCollisionShape.cpp">
+      <Filter>Source Files\Bullet API</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicEngineBulletAPI\BulletRigidBody.cpp">
+      <Filter>Source Files\Bullet API</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicEngineBulletAPI\BulletPhysicEngine.cpp">
+      <Filter>Source Files\Bullet API</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

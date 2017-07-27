@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\MISC">
+      <UniqueIdentifier>{6f8e2476-6265-4a87-bd15-764420fe8919}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MISC">
+      <UniqueIdentifier>{cd04a598-f644-4480-89fd-cf785cfbf1e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TCMInputManagerWindowsAPI">
+      <UniqueIdentifier>{10209247-216a-43b0-afcb-140802a7b880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TCMInputManagerAbstract">
+      <UniqueIdentifier>{f5b53438-6586-4c08-90c6-a05bfa5723ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TCMInputManagerWindowsAPI">
+      <UniqueIdentifier>{e7987558-037c-4430-aabf-34d1f31003b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TCMInputManagerAbstract">
+      <UniqueIdentifier>{26baa1ac-26b7-4abd-8b5b-d867aaa0deb2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files\MISC</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files\MISC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMInputManager\BaseInputManagerKeys.h">
+      <Filter>Header Files\TCMInputManagerAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMInputManager\TCMCoreInputManager.h">
+      <Filter>Header Files\TCMInputManagerAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="TCMCoreInputManagerWin.h">
+      <Filter>Header Files\TCMInputManagerWindowsAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMInputManager\InputManager.h">
+      <Filter>Header Files\TCMInputManagerAbstract</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMInputManager\DLLDefine.h">
+      <Filter>Header Files\MISC</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files\MISC</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files\MISC</Filter>
+    </ClCompile>
+    <ClCompile Include="TCMCoreInputManagerWin.cpp">
+      <Filter>Source Files\TCMInputManagerWindowsAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Source Files\TCMInputManagerAbstract</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

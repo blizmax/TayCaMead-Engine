@@ -1,0 +1,40 @@
+<RCC>
+    <qresource prefix="/white">
+        <file alias="add">Resources/white/ic_add_white_24dp_2x.png</file>
+        <file alias="build">Resources/white/ic_build_white_24dp_2x.png</file>
+        <file alias="cancel">Resources/white/ic_cancel_white_24dp_2x.png</file>
+        <file alias="copy">Resources/white/ic_content_copy_white_24dp_2x.png</file>
+        <file alias="cut">Resources/white/ic_content_cut_white_24dp_2x.png</file>
+        <file alias="paste">Resources/white/ic_content_paste_white_24dp_2x.png</file>
+        <file alias="open">Resources/white/ic_open_in_new_white_24dp_2x.png</file>
+        <file alias="pause">Resources/white/ic_pause_white_24dp_2x.png</file>
+        <file alias="play">Resources/white/ic_play_arrow_white_24dp_2x.png</file>
+        <file alias="redo">Resources/white/ic_redo_white_24dp_2x.png</file>
+        <file alias="save">Resources/white/ic_save_white_24dp_2x.png</file>
+        <file alias="settings">Resources/white/ic_settings_white_24dp_2x.png</file>
+        <file alias="next">Resources/white/ic_skip_next_white_24dp_2x.png</file>
+        <file alias="undo">Resources/white/ic_undo_white_24dp_2x.png</file>
+        <file alias="delete">Resources/white/ic_delete_white_24dp_1x.png</file>
+    </qresource>
+    <qresource prefix="/black">
+        <file alias="add">Resources/black/ic_add_black_24dp_2x.png</file>
+        <file alias="build">Resources/black/ic_build_black_24dp_2x.png</file>
+        <file alias="cancel">Resources/black/ic_cancel_black_24dp_2x.png</file>
+        <file alias="copy">Resources/black/ic_content_copy_black_24dp_2x.png</file>
+        <file alias="cut">Resources/black/ic_content_cut_black_24dp_2x.png</file>
+        <file alias="paste">Resources/black/ic_content_paste_black_24dp_2x.png</file>
+        <file alias="open">Resources/black/ic_open_in_new_black_24dp_2x.png</file>
+        <file alias="pause">Resources/black/ic_pause_black_24dp_2x.png</file>
+        <file alias="play">Resources/black/ic_play_arrow_black_24dp_2x.png</file>
+        <file alias="redo">Resources/black/ic_redo_black_24dp_2x.png</file>
+        <file alias="save">Resources/black/ic_save_black_24dp_2x.png</file>
+        <file alias="settings">Resources/black/ic_settings_black_24dp_2x.png</file>
+        <file alias="next">Resources/black/ic_skip_next_black_24dp_2x.png</file>
+        <file alias="undo">Resources/black/ic_undo_black_24dp_2x.png</file>
+        <file alias="delete">Resources/black/ic_delete_black_24dp_1x.png</file>
+    </qresource>
+    <qresource prefix="/icon">
+        <file alias="launcher">Resources/ic_launcher.png</file>
+        <file alias="splash">Resources/splash.png</file>
+    </qresource>
+</RCC>

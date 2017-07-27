@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\TCMCore">
+      <UniqueIdentifier>{424ba887-2bb0-403b-8ebf-015451bbddf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TCMCore">
+      <UniqueIdentifier>{5f3f0a47-6850-4b7f-938e-77189188951b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MISC">
+      <UniqueIdentifier>{5ebb4c65-a7fe-4759-85bc-d55d5f352e5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RapidXML">
+      <UniqueIdentifier>{4d018f8b-b2eb-45c4-9fe9-3459df936f2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MISC">
+      <UniqueIdentifier>{8093ef71-da52-4a59-8509-bb67b8f6925e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LoopManagement">
+      <UniqueIdentifier>{3cff5def-fdb4-4c66-b63e-39fe28920cad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\LoopManagement">
+      <UniqueIdentifier>{cce7fea3-55fd-4d86-98ff-ae8b874d3f8c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\TCMCore\RapidXML\rapidxml.hpp">
+      <Filter>Source Files\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMCore\RapidXML\rapidxml_iterators.hpp">
+      <Filter>Source Files\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMCore\RapidXML\rapidxml_print.hpp">
+      <Filter>Source Files\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMCore\RapidXML\rapidxml_utils.hpp">
+      <Filter>Source Files\RapidXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMCore\DLLDefine.h">
+      <Filter>Header Files\MISC</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files\MISC</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files\MISC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMCore\Namespaces.h">
+      <Filter>Header Files\MISC</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\TCMCore\Core.h">
+      <Filter>Header Files\TCMCore</Filter>
+    </ClInclude>
+    <ClInclude Include="TemporaryRotatingComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lifecycle.h">
+      <Filter>Header Files\LoopManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorLifecycle.h">
+      <Filter>Header Files\LoopManagement</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files\MISC</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files\MISC</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>Source Files\TCMCore</Filter>
+    </ClCompile>
+    <ClCompile Include="TemporaryRotatingComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lifecycle.cpp">
+      <Filter>Source Files\LoopManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorLifecycle.cpp">
+      <Filter>Source Files\LoopManagement</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
