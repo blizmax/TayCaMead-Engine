@@ -1,6 +1,0 @@
-var searchData=
-[
-  ['operator_21_3d',['operator!=',['../struct_t_c_m_1_1_engine_1_1s___t_c_m_transform.html#afdf66ce4952fabc4062aa003df7afff9',1,'TCM::Engine::s_TCMTransform::operator!=()'],['../struct_t_c_m_1_1_engine_1_1_graphics_1_1s___light_data.html#a749f4c3fd34b238662f06354cfd5234e',1,'TCM::Engine::Graphics::s_LightData::operator!=()'],['../struct_t_c_m_1_1_engine_1_1_graphics_1_1s___t_c_m_abstract_material.html#afa35c5552f558e68e7d9ea552f561686',1,'TCM::Engine::Graphics::s_TCMAbstractMaterial::operator!=()']]],
-  ['operator_3c',['operator&lt;',['../classsf_1_1_ip_address.html#a1c4ae6b26e9df765ca57d2715e9a7885',1,'sf::IpAddress::operator&lt;()'],['../classsf_1_1_string.html#ac2ca5a7703402a2bbafd85eec6d1e846',1,'sf::String::operator&lt;()']]],
-  ['operator_3d_3d',['operator==',['../struct_t_c_m_1_1_engine_1_1s___t_c_m_transform.html#ae8c5927434ccd5a91541696a81a58008',1,'TCM::Engine::s_TCMTransform::operator==()'],['../classsf_1_1_string.html#a2a385459fa9a237e61a712fa956d489e',1,'sf::String::operator==()'],['../struct_t_c_m_1_1_engine_1_1_graphics_1_1s___light_data.html#aabdc963c6a5fb665e06b83cbce2e8fb0',1,'TCM::Engine::Graphics::s_LightData::operator==()'],['../struct_t_c_m_1_1_engine_1_1_graphics_1_1s___t_c_m_abstract_material.html#aaf563554c0b63a5518620f4a157faef0',1,'TCM::Engine::Graphics::s_TCMAbstractMaterial::operator==()']]]
-];
