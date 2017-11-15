@@ -114,7 +114,7 @@ namespace TCM
 		 * \return The value stored in the SerializedInterface, without pointers
 		 */
 		template<typename T>
-		typename std::enable_if<!std::is_pointer<T>::value, T>::type SerializedInterface::GetPointerless() const;
+		typename std::enable_if<!std::is_pointer<T>::value, T>::type GetPointerless() const;
 
 		/**
 		 * \brief Set a value to this SerializedInterface

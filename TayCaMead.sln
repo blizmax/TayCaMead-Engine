@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EngineClasses", "EngineClasses\EngineClasses.vcxproj", "{3766A30C-8B88-4945-B648-22288C8A6E91}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -79,11 +79,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TCMInputManager", "TCMInput
 		{E6719470-B00D-411C-AE9F-CC668E0989E2} = {E6719470-B00D-411C-AE9F-CC668E0989E2}
 		{CFAA27B0-59E9-493D-B955-1C02B86C836D} = {CFAA27B0-59E9-493D-B955-1C02B86C836D}
 		{57B450D3-28E9-4143-A03A-0BAE400CB738} = {57B450D3-28E9-4143-A03A-0BAE400CB738}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MathLibTest", "UnitTest1\UnitTest1.vcxproj", "{588C9F44-7689-4E62-9E04-8FB749ECED32}"
-	ProjectSection(ProjectDependencies) = postProject
-		{E6719470-B00D-411C-AE9F-CC668E0989E2} = {E6719470-B00D-411C-AE9F-CC668E0989E2}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TCMResourceManager", "TCMResourceManager\TCMResourceManager.vcxproj", "{37B82C69-8CB2-41B7-8825-64107E896BFD}"
@@ -295,19 +290,6 @@ Global
 		{6BB21ECD-753C-4426-9143-A5E2BFEF0283}.Release|x64.Build.0 = Release|x64
 		{6BB21ECD-753C-4426-9143-A5E2BFEF0283}.Release|x86.ActiveCfg = Release|Win32
 		{6BB21ECD-753C-4426-9143-A5E2BFEF0283}.Release|x86.Build.0 = Release|Win32
-		{588C9F44-7689-4E62-9E04-8FB749ECED32}.Debug_OpenGL|x64.ActiveCfg = Debug_OpenGL|x64
-		{588C9F44-7689-4E62-9E04-8FB749ECED32}.Debug_OpenGL|x86.ActiveCfg = Debug_OpenGL|Win32
-		{588C9F44-7689-4E62-9E04-8FB749ECED32}.Debug_OpenGL|x86.Build.0 = Debug_OpenGL|Win32
-		{588C9F44-7689-4E62-9E04-8FB749ECED32}.Debug|x64.ActiveCfg = Debug|x64
-		{588C9F44-7689-4E62-9E04-8FB749ECED32}.Debug|x64.Build.0 = Debug|x64
-		{588C9F44-7689-4E62-9E04-8FB749ECED32}.Debug|x86.ActiveCfg = Debug|Win32
-		{588C9F44-7689-4E62-9E04-8FB749ECED32}.Debug|x86.Build.0 = Debug|Win32
-		{588C9F44-7689-4E62-9E04-8FB749ECED32}.Release_OpenGL|x64.ActiveCfg = Release|x64
-		{588C9F44-7689-4E62-9E04-8FB749ECED32}.Release_OpenGL|x86.ActiveCfg = Release|Win32
-		{588C9F44-7689-4E62-9E04-8FB749ECED32}.Release|x64.ActiveCfg = Release|x64
-		{588C9F44-7689-4E62-9E04-8FB749ECED32}.Release|x64.Build.0 = Release|x64
-		{588C9F44-7689-4E62-9E04-8FB749ECED32}.Release|x86.ActiveCfg = Release|Win32
-		{588C9F44-7689-4E62-9E04-8FB749ECED32}.Release|x86.Build.0 = Release|Win32
 		{37B82C69-8CB2-41B7-8825-64107E896BFD}.Debug_OpenGL|x64.ActiveCfg = Debug_OpenGL|x64
 		{37B82C69-8CB2-41B7-8825-64107E896BFD}.Debug_OpenGL|x64.Build.0 = Debug_OpenGL|x64
 		{37B82C69-8CB2-41B7-8825-64107E896BFD}.Debug_OpenGL|x86.ActiveCfg = Debug_OpenGL|Win32
@@ -448,5 +430,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97190F12-308E-4283-BDA0-C3492CA748A8}
+		Qt5Version = 5.9.2
 	EndGlobalSection
 EndGlobal

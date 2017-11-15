@@ -2,15 +2,11 @@
 
 // Necessaire si linkage dynamique (dll)
 #define FBXSDK_SHARED
-#include "../ObjectLoader/_Includes/fbxsdk.h"
+#include "fbxsdk.h"
 #include "TCMRenderer/RHI/Generic/RenderData.h"
 
 #ifdef FBXSDK_SHARED
-#ifdef _DEBUG
-#pragma comment(lib, "ObjectLoader/fbxsdk/debug/libfbxsdk.lib")
-#else
-		#pragma comment(lib, "ObjectLoader/fbxsdk/release/libfbxsdk.lib")
-#endif
+#pragma comment(lib, "libfbxsdk.lib")
 #else
 	#error "FBXSDK cannot be loaded"
 #endif
