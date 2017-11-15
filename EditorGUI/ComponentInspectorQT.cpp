@@ -19,7 +19,7 @@ namespace TCM
 			{
 				QVBoxLayout* mainLayout = new QVBoxLayout( this );
 				QHBoxLayout* buttonLayout = new QHBoxLayout;
-				QPushButton* button = new QPushButton( QIcon::fromTheme( QString::fromStdString( MainWindow::GetIconPath( IconType::REMOVE ) ) ), tr( "Remove" ) );
+				QPushButton* button = new QPushButton( QIcon::fromTheme( QString::fromStdString( MainWindow::GetIconPath( IconType::REMOVE ) ) ), tr( "Remove" ), this);
 
 				connect( button, SIGNAL( clicked( bool ) ), this, SLOT( DeleteComponent( bool ) ) );
 
