@@ -481,6 +481,8 @@ namespace TCM
 			RemoveParent();
 
 			m_parent = newParent;
+
+			//TODO: Remove that, it has to get his own enable
 			SetEnabled( m_parent->IsEnabled() );
 
 			GetOnRelationChange().Invoke();
