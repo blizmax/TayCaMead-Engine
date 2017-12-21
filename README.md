@@ -7,10 +7,10 @@ Made by Nicolas Fontes, Guillaume Newton, and Bastien Leduc.
 
 This project is using C++.
 
-###Requirements:
+### Requirements:
 Qt, FBX Sdk, Glut, SFML, VLD (Only in debug configuration)
 
-###Features:
+### Features:
 
   -  Hierarchy system like in Unity 3D
 	  - Scene Objects
