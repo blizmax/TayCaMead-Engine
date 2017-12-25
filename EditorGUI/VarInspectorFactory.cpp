@@ -3,10 +3,13 @@
 #include "TCMMemory/TCMSerialization.h"
 #include "MathLib/Vec2.h"
 #include "MathLib/Vec3.h"
+#include "MathLib/Vec4.h"
 #include "VarInspector.h"
 #include "MathLib/ColorRGB.h"
 #include "MathLib/ColorRGBA.h"
 #include "EngineClasses/TCMComponentRigidBody.h"
+#include "TCMPhysicEngine/PhysicEngine/CollisionShapeData.h"
+#include "TCMPhysicEngine/PhysicEngine/RigidBodyData.h"
 
 #if defined(TCM_QT_API)
 #include "VarInspectorFactoryQT.h"
