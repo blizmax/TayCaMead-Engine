@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Debug_OpenGL|x64">
-      <Configuration>Debug_OpenGL</Configuration>
+    <ProjectConfiguration Include="Debug_freeglut|x64">
+      <Configuration>Debug_freeglut</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-    <ProjectConfiguration Include="Release_OpenGL|x64">
-      <Configuration>Release_OpenGL</Configuration>
+    <ProjectConfiguration Include="Release_freeglut|x64">
+      <Configuration>Release_freeglut</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release|x64">
@@ -28,7 +28,7 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|x64'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_freeglut|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
@@ -36,7 +36,7 @@
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|x64'" Label="Configuration">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_freeglut|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
@@ -48,13 +48,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)libs\$(ProjectName)\</OutDir>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|x64'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_freeglut|x64'">
     <OutDir>$(SolutionDir)libs\$(ProjectName)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)libs\$(ProjectName)\</OutDir>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|x64'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_freeglut|x64'">
     <OutDir>$(SolutionDir)libs\$(ProjectName)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -77,7 +77,7 @@
       <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_freeglut|x64'">
     <ClCompile>
       <PreprocessorDefinitions>_DEBUG;UNICODE;WIN32;WIN64;TCMGLUT;TCMWINDOW_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SolutionDir)Common\;%(AdditionalIncludeDirectories);$(SolutionDir)libs\freeglut\include\;$(SolutionDir)libs\glew-2.0.0\include\;$(SolutionDir)libs\;$(MSBuildProgramFiles32)\Visual Leak Detector\include</AdditionalIncludeDirectories>
@@ -99,7 +99,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PreprocessorDefinitions>NDEBUG;UNICODE;WIN32;WIN64;TCMGLUT;TCMWINDOW_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;UNICODE;WIN32;WIN64;TCMWINDOW_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SolutionDir)Common\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat />
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -110,13 +110,13 @@
       <OutputFile>$(OutDir)\$(ProjectName).dll</OutputFile>
       <AdditionalLibraryDirectories>$(SolutionDir)libs\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <AdditionalDependencies>opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_freeglut|x64'">
     <ClCompile>
       <PreprocessorDefinitions>NDEBUG;UNICODE;WIN32;WIN64;TCMGLUT;TCMWINDOW_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SolutionDir)Common\;%(AdditionalIncludeDirectories);$(SolutionDir)libs\freeglut\include\;$(SolutionDir)libs\glew-2.0.0\include\;$(SolutionDir)libs\</AdditionalIncludeDirectories>
@@ -144,61 +144,61 @@
     <CustomBuild Include="..\Common\TCMWindow\AbstractWindow.h">
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
       </Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|x64'">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_freeglut|x64'">
       </Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|x64'">Performing Custom Build Tools</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_freeglut|x64'">Performing Custom Build Tools</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
       </Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|x64'">
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_freeglut|x64'">
       </Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
       </AdditionalInputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|x64'">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug_freeglut|x64'">
       </AdditionalInputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|x64'">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_freeglut|x64'">
       </Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|x64'">Performing Custom Build Tools</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_freeglut|x64'">Performing Custom Build Tools</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|x64'">
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_freeglut|x64'">
       </Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </AdditionalInputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|x64'">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_freeglut|x64'">
       </AdditionalInputs>
     </CustomBuild>
     <CustomBuild Include="GlutWindow.h">
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
       </Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|x64'">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_freeglut|x64'">
       </Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|x64'">Performing Custom Build Tools</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_freeglut|x64'">Performing Custom Build Tools</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
       </Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|x64'">
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_freeglut|x64'">
       </Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
       </AdditionalInputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|x64'">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug_freeglut|x64'">
       </AdditionalInputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|x64'">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_freeglut|x64'">
       </Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|x64'">Performing Custom Build Tools</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_freeglut|x64'">Performing Custom Build Tools</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|x64'">
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_freeglut|x64'">
       </Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </AdditionalInputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|x64'">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_freeglut|x64'">
       </AdditionalInputs>
     </CustomBuild>
   </ItemGroup>
@@ -206,31 +206,31 @@
     <CustomBuild Include="TCMGlut.h">
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
       </Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|x64'">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_freeglut|x64'">
       </Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Performing Custom Build Tools</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|x64'">Performing Custom Build Tools</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_freeglut|x64'">Performing Custom Build Tools</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
       </Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|x64'">
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_freeglut|x64'">
       </Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
       </AdditionalInputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|x64'">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug_freeglut|x64'">
       </AdditionalInputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </Command>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|x64'">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_freeglut|x64'">
       </Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Performing Custom Build Tools</Message>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|x64'">Performing Custom Build Tools</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_freeglut|x64'">Performing Custom Build Tools</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </Outputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|x64'">
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_freeglut|x64'">
       </Outputs>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
       </AdditionalInputs>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|x64'">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_freeglut|x64'">
       </AdditionalInputs>
     </CustomBuild>
   </ItemGroup>
