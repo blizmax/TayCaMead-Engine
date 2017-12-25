@@ -74,7 +74,7 @@
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|x64'">
@@ -94,7 +94,7 @@
       <AdditionalDependencies>opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -113,7 +113,7 @@
       <AdditionalDependencies>opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|x64'">
@@ -133,7 +133,7 @@
       <AdditionalDependencies>opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -164,6 +164,9 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|Win32'">
     <ClCompile>
@@ -178,6 +181,9 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -194,7 +200,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|x64'">
@@ -213,7 +219,7 @@
       <AdditionalLibraryDirectories>$(SolutionDir)libs\;$(MSBuildProgramFiles32)\Visual Leak Detector\lib\Win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -233,6 +239,9 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|Win32'">
     <ClCompile>
@@ -251,6 +260,9 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -271,7 +283,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|x64'">
@@ -293,7 +305,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

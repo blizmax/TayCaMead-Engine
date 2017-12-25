@@ -179,7 +179,8 @@
       <AdditionalLibraryDirectories>$(FbxLibDir)x86\debug\;$(SolutionDir)libs\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>copy "$(TargetPath)" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"
+xcopy /Y /I "$(FbxLibDir)x86\release\libfbxsdk.dll" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|Win32'">
@@ -198,7 +199,8 @@
       <AdditionalLibraryDirectories>$(FbxLibDir)x86\debug\;$(SolutionDir)libs\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>copy "$(TargetPath)" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"
+xcopy /Y /I "$(FbxLibDir)x86\release\libfbxsdk.dll" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -217,7 +219,8 @@
       <AdditionalLibraryDirectories>$(SolutionDir)libs\;$(FbxLibDir)x64\debug\;%(AdditionalLibraryDirectories);$(MSBuildProgramFiles32)\Visual Leak Detector\lib\Win64</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>copy "$(TargetPath)" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"
+xcopy /Y /I "$(FbxLibDir)x64\release\libfbxsdk.dll" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|x64'">
@@ -237,9 +240,8 @@
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;libfbxsdk.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>
-        xcopy /Y /I "$(TargetPath)" "$(SolutionDir)$(Platform)\$(Configuration)\"
-        xcopy /Y /I "$(FbxLibDir)x64\debug\libfbxsdk.dll" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"
+xcopy /Y /I "$(FbxLibDir)x64\release\libfbxsdk.dll" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -262,7 +264,8 @@
       <AdditionalLibraryDirectories>$(SolutionDir)libs\;$(FbxLibDir)x86\release\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>copy "$(TargetPath)" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"
+xcopy /Y /I "$(FbxLibDir)x86\debug\libfbxsdk.dll" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|Win32'">
@@ -285,7 +288,8 @@
       <AdditionalLibraryDirectories>$(SolutionDir)libs\;$(FbxLibDir)x86\release\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>copy "$(TargetPath)" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"
+xcopy /Y /I "$(FbxLibDir)x86\debug\libfbxsdk.dll" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -308,7 +312,8 @@
       <AdditionalLibraryDirectories>$(FbxLibDir)x64\release\;$(SolutionDir)libs\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>copy "$(TargetPath)" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"
+xcopy /Y /I "$(FbxLibDir)x64\debug\libfbxsdk.dll" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|x64'">
@@ -332,9 +337,8 @@
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;libfbxsdk.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>
-        xcopy /Y /I "$(TargetPath)" "$(SolutionDir)$(Platform)\$(Configuration)\"
-        xcopy /Y /I "$(FbxLibDir)x64\release\libfbxsdk.dll" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"
+xcopy /Y /I "$(FbxLibDir)x64\debug\libfbxsdk.dll" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

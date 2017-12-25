@@ -164,6 +164,10 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"
+xcopy /Y /I "$(SolutionDir)libs\sfml\x86\*" "$(SolutionDir)bin\"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|Win32'">
     <ClCompile>
@@ -178,6 +182,10 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"
+xcopy /Y /I "$(SolutionDir)libs\sfml\x86\*" "$(SolutionDir)bin\"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -195,8 +203,8 @@
       <AdditionalLibraryDirectories>$(SolutionDir)libs\;%(AdditionalLibraryDirectories);$(MSBuildProgramFiles32)\Visual Leak Detector\lib\Win64</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)$(Platform)\$(Configuration)\"
-xcopy /Y /I "$(SolutionDir)libs\TCMAudioEngine\dll\*" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"
+xcopy /Y /I "$(SolutionDir)libs\sfml\x64\*" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_OpenGL|x64'">
@@ -215,8 +223,8 @@ xcopy /Y /I "$(SolutionDir)libs\TCMAudioEngine\dll\*" "$(SolutionDir)$(Platform)
       <AdditionalLibraryDirectories>$(SolutionDir)libs\;%(AdditionalLibraryDirectories);$(MSBuildProgramFiles32)\Visual Leak Detector\lib\Win64</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)$(Platform)\$(Configuration)\"
-xcopy /Y /I "$(SolutionDir)libs\TCMAudioEngine\dll\*" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"
+xcopy /Y /I "$(SolutionDir)libs\sfml\x64\*" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -236,6 +244,10 @@ xcopy /Y /I "$(SolutionDir)libs\TCMAudioEngine\dll\*" "$(SolutionDir)$(Platform)
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"
+xcopy /Y /I "$(SolutionDir)libs\sfml\x86\*" "$(SolutionDir)bin\"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|Win32'">
     <ClCompile>
@@ -254,6 +266,10 @@ xcopy /Y /I "$(SolutionDir)libs\TCMAudioEngine\dll\*" "$(SolutionDir)$(Platform)
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"
+xcopy /Y /I "$(SolutionDir)libs\sfml\x86\*" "$(SolutionDir)bin\"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -275,8 +291,8 @@ xcopy /Y /I "$(SolutionDir)libs\TCMAudioEngine\dll\*" "$(SolutionDir)$(Platform)
       <AdditionalLibraryDirectories>$(SolutionDir)libs\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)$(Platform)\$(Configuration)\"
-xcopy /Y /I "$(SolutionDir)libs\TCMAudioEngine\dll\*" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"
+xcopy /Y /I "$(SolutionDir)libs\sfml\x64\*" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_OpenGL|x64'">
@@ -299,8 +315,8 @@ xcopy /Y /I "$(SolutionDir)libs\TCMAudioEngine\dll\*" "$(SolutionDir)$(Platform)
       <AdditionalLibraryDirectories>$(SolutionDir)libs\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)$(Platform)\$(Configuration)\"
-xcopy /Y /I "$(SolutionDir)libs\TCMAudioEngine\dll\*" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+      <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"
+xcopy /Y /I "$(SolutionDir)libs\sfml\x64\*" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
