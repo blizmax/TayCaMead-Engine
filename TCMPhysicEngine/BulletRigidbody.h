@@ -1,6 +1,8 @@
 #pragma once
 #include "Rigidbody.h"
 
+class btRigidBody;
+
 namespace TCM
 {
 	namespace Engine
@@ -13,14 +15,15 @@ namespace TCM
 				BulletRigidbody();
 				~BulletRigidbody();
 
+				virtual void SetPosition(const Math::Vec3& position) override;
+				virtual void SetRotation(const Math::Quat& rotation) override;
+				virtual void SetVelocity(const Math::Vec3& velocity) override;
+
 				virtual Math::Vec3 GetPosition() const override;
-				virtual Math::Vec3 GetRotation() const override;
+				virtual Math::Quat GetRotation() const override;
 				virtual Math::Vec3 GetVelocity() const override;
 
 			protected:
-				virtual void ApplyPosition() override;
-				virtual void ApplyRotation() override;
-				virtual void ApplyVelocity() override;
 				virtual void ApplyPositionConstraints() override;
 				virtual void ApplyRotationConstraints() override;
 				virtual void ApplyCenterOfMass() override;
@@ -28,6 +31,11 @@ namespace TCM
 				virtual void ApplyCollisionDetection() override;
 				virtual void ApplyKinematic() override;
 				virtual void ApplyCollider() override;
+
+			public:
+
+			protected:
+				btRigidBody * bulletRigidbody;
 			};
 
 		}

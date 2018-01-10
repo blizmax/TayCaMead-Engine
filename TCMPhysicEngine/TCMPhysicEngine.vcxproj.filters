@@ -12,6 +12,12 @@
     <Filter Include="Header Files\MISC">
       <UniqueIdentifier>{ab03a295-d94a-4d6b-8968-6168c1060c72}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Bullet">
+      <UniqueIdentifier>{5a6c3e1d-599e-470f-ba82-4066c9139c04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Bullet">
+      <UniqueIdentifier>{26d70b53-9484-42b6-9968-c2645a297892}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -32,17 +38,17 @@
     <ClInclude Include="Collider.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BulletPhysicEngine.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BulletRigidbody.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ColliderHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="BulletColliderHandler.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="BulletPhysicEngine.h">
+      <Filter>Header Files\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletRigidbody.h">
+      <Filter>Header Files\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletCollider.h">
+      <Filter>Header Files\Bullet</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -55,14 +61,14 @@
     <ClCompile Include="Collider.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="BulletPhysicEngine.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="BulletCollider.cpp">
+      <Filter>Source Files\Bullet</Filter>
     </ClCompile>
     <ClCompile Include="BulletRigidbody.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Bullet</Filter>
     </ClCompile>
-    <ClCompile Include="BulletColliderHandler.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="BulletPhysicEngine.cpp">
+      <Filter>Source Files\Bullet</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

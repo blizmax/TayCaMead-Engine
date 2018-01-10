@@ -12,7 +12,7 @@ namespace TCM
 				ApplyPosition();
 			}
 
-			void Rigidbody::SetRotation(const Math::Vec3& rotation)
+			void Rigidbody::SetRotation(const Math::Quat& rotation)
 			{
 				Rotation = rotation;
 				ApplyRotation();
@@ -22,21 +22,6 @@ namespace TCM
 			{
 				Velocity = velocity;
 				ApplyVelocity();
-			}
-
-			Math::Vec3 Rigidbody::GetPosition() const
-			{
-				return Velocity;
-			}
-
-			Math::Vec3 Rigidbody::GetRotation() const
-			{
-				return Rotation;
-			}
-
-			Math::Vec3 Rigidbody::GetVelocity() const
-			{
-				return Velocity;
 			}
 
 			void Rigidbody::SetPositionConstraints(const EConstraints constraints)

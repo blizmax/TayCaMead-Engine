@@ -1,6 +1,8 @@
 #pragma once
 #include "TCMPhysicEngine/PhysicEngineDLL.h"
 #include "MathLib/Vec3.h"
+#include "MathLib/Quat.h"
+
 #include <cstdint>
 
 namespace TCM
@@ -28,12 +30,14 @@ namespace TCM
 				virtual ~Rigidbody() = default;
 
 #pragma region Common Functions
-				void SetPosition(const Math::Vec3& position);
-				void SetRotation(const Math::Vec3& rotation);
-				void SetVelocity(const Math::Vec3& velocity);
+				virtual void SetPosition(const Math::Vec3& position) = 0;
+				virtual void SetRotation(const Math::Quat& rotation) = 0;
+				void SetEulerAngles(const Math::Vec3& eulerAngles);
+				virtual void SetVelocity(const Math::Vec3& velocity) = 0;
 
 				virtual Math::Vec3 GetPosition() const = 0;
-				virtual Math::Vec3 GetRotation() const = 0;
+				virtual Math::Quat GetRotation() const = 0;
+				Math::Vec3 GetEulerAngles() const;
 				virtual Math::Vec3 GetVelocity() const = 0;
 
 				void SetPositionConstraints(const EConstraints constraints);
@@ -62,22 +66,11 @@ namespace TCM
 
 				Rigidbody() = default;
 
-				virtual void ApplyPosition() = 0;
-				virtual void ApplyRotation() = 0;
-				virtual void ApplyVelocity() = 0;
-
-				virtual void ApplyPositionConstraints() = 0;
-				virtual void ApplyRotationConstraints() = 0;
-
 				virtual void ApplyCenterOfMass() = 0;
 				virtual void ApplyMass() = 0;
 				virtual void ApplyCollisionDetection() = 0;
 				virtual void ApplyKinematic() = 0;
 				virtual void ApplyCollider() = 0;
-
-				Math::Vec3 Position;
-				Math::Vec3 Rotation;
-				Math::Vec3 Velocity;
 
 				EConstraints PositionConstraints = EConstraints::NONE;
 				EConstraints RotationConstraints = EConstraints::NONE;

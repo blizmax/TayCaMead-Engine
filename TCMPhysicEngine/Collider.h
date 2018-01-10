@@ -74,11 +74,15 @@ namespace TCM
 			public:
 				PlaneCollider();
 
-				void SetExtends(const Math::Vec2& extends);
-				Math::Vec2 GetExtends() const;
+				void SetNormal(const Math::Vec3& normal);
+				Math::Vec3 GetNormal() const;
+
+				void SetConstant(const float constant);
+				float GetConstant() const;
 
 			protected:
-				Math::Vec2 Extends;
+				Math::Vec3 Normal;
+				float Constant;
 			};
 
 			class TCMPHYSICENGINE_DLL CylinderCollider : public Collider
