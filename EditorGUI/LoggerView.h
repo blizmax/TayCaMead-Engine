@@ -11,7 +11,7 @@ namespace TCM
 		{
 		public:
 			LoggerView();
-			~LoggerView();
+			virtual ~LoggerView();
 
 			void OnPlay();
 			void Clear();

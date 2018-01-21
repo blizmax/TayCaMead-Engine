@@ -6,9 +6,7 @@ namespace TCM
 		class EditorCommand abstract
 		{
 		public:
-			virtual ~EditorCommand()
-			{
-			}
+			virtual ~EditorCommand() = default;
 
 			virtual void Execute() = 0;
 			virtual void Undo() = 0;

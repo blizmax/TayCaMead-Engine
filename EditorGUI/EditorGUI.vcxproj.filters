@@ -830,7 +830,7 @@
       <Filter>Header Files\QtEditor\CustomWidget</Filter>
     </CustomBuild>
     <CustomBuild Include="DeselectableTreeView.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\QtEditor</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>

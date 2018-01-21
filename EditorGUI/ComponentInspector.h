@@ -16,7 +16,7 @@ namespace TCM
 		{
 		public:
 			ComponentInspector( Inspector* inspector, Engine::TCMComponent* component );
-			~ComponentInspector();
+			virtual ~ComponentInspector();
 			Engine::TCMComponent* GetComponent() const;
 
 			void Delete();
