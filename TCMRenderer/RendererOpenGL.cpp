@@ -53,7 +53,7 @@ namespace TCM
 
 					const GLenum err = glewInit();
 
-					std::string message;
+					/*std::string message;
 
 					message.append("Drivers version: ");
 					message.append(reinterpret_cast<const char *>(glGetString(GL_VERSION)));
@@ -83,7 +83,7 @@ namespace TCM
 						message.append("] = ");
 						message.append(reinterpret_cast<const char *>(glGetStringi(GL_EXTENSIONS, index)));
 						TCMDEBUG (message);
-					}
+					}*/
 
 					if ( err != GLEW_OK )
 						throw std::runtime_error( "RendererOpenGL::CreateRenderWindow() - glutCreateWindow() failed - [" + std::string( reinterpret_cast<const char *>(glewGetErrorString( err )) ) + "]" );

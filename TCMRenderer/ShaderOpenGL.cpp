@@ -3,6 +3,9 @@
 #include <fstream>
 #include <iostream>
 
+#include "TCMLogger/Logger.h"
+
+
 namespace TCM
 {
 	namespace Engine
@@ -41,7 +44,11 @@ namespace TCM
 						char errorBuffer[4096];
 						int errorLen;
 						glGetProgramInfoLog( m_program, 4096, &errorLen, errorBuffer );
-						std::cerr << "Error - Program:\n" << errorBuffer << std::endl;
+
+						std::string message;
+						message.append("Error - Program:\n");
+						message.append(errorBuffer);
+						TCMDEBUG(message);
 						return false;
 					}
 
