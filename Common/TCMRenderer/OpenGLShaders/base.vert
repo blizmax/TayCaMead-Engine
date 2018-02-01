@@ -1,4 +1,4 @@
-#version 430
+#version 330 core
 
 in vec4	a_Position;  // x,y,z
 in vec3	a_Normal;	 // NX, NY, NZ

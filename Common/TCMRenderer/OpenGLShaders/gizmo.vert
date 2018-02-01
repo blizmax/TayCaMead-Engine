@@ -1,4 +1,4 @@
-#version 430
+#version 330 core
 
 in vec4	a_Position;  // x,y,z
 in vec4	a_Color;  // x,y,z
