@@ -231,8 +231,8 @@ xcopy /Y /I "$(SolutionDir)libs\glew-2.0.0\bin\Release\Win32\glew32.dll" "$(Solu
     </Link>
     <PostBuildEvent>
       <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"
-xcopy /Y /I "$(SolutionDir)libs\freeglut\bin\x64\freeglut.dll" "$(SolutionDir)bin\"
-xcopy /Y /I "$(SolutionDir)libs\glew-2.0.0\bin\Release\x64\glew32.dll" "$(SolutionDir)bin\"</Command>
+xcopy /Y /I "$(SolutionDir)libs\freeglut\bin\freeglut.dll" "$(SolutionDir)bin\"
+xcopy /Y /I "$(SolutionDir)libs\glew-2.0.0\bin\Release\Win32\glew32.dll" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -327,8 +327,8 @@ xcopy /Y /I "$(SolutionDir)libs\glew-2.0.0\bin\Release\Win32\glew32.dll" "$(Solu
     </Link>
     <PostBuildEvent>
       <Command>xcopy /Y /I "$(TargetPath)" "$(SolutionDir)bin\"
-xcopy /Y /I "$(SolutionDir)libs\freeglut\bin\x64\freeglut.dll" "$(SolutionDir)bin\"
-xcopy /Y /I "$(SolutionDir)libs\glew-2.0.0\bin\Release\x64\glew32.dll" "$(SolutionDir)bin\"</Command>
+xcopy /Y /I "$(SolutionDir)libs\freeglut\bin\freeglut.dll" "$(SolutionDir)bin\"
+xcopy /Y /I "$(SolutionDir)libs\glew-2.0.0\bin\Release\Win32\glew32.dll" "$(SolutionDir)bin\"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -1,13 +1,9 @@
 ﻿#include "TCMSignalHandler/SignalHandler/SignalHandler.h"
 #include "TCMLogger/Logger.h"
 #include <mutex>
-
-#if defined(TCM_WINDOWS_SIGNAL_HANDLER)
 #include "TCMSignalHandler/Windows/WindowsSignalHandler.h"
+
 typedef TCM::Engine::Signal::Windows::WindowsSignalHandler TCMOverridedSignalHandler;
-#else
-#error "NO SIGNAL HANDLER DEFINED"
-#endif
 
 namespace TCM
 {
