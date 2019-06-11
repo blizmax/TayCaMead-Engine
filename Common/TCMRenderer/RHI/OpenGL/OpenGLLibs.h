@@ -5,4 +5,4 @@
 #pragma comment (lib, "opengl32.lib")
 #endif
 
-#include "GL/glew.h"
+#include "glew-2.1.0/include/GL/glew.h"
